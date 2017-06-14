@@ -183,12 +183,6 @@ bar {
 	}
 }
 
-assign [class="slack"] $workspace9
-assign [class="mattermost-desktop"] $workspace9
-
 exec_always --no-startup-id feh --bg-scale '/home/nii236/Pictures/watch.jpg'
 
-exec --no-startup-id slack
-exec --no-startup-id mattermost-desktop
-
-exec_always --no-startup-id compton -f
+# exec_always --no-startup-id compton -f
