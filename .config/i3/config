@@ -5,10 +5,10 @@ set $mod Mod1
 bindsym $mod+Shift+x exec i3lock --color 475263
 
 # i3-gaps settings
-gaps inner 25
-gaps outer 25
-smart_gaps on
-for_window [class="^.*"] border pixel 0
+gaps inner 5
+gaps outer 10
+# smart_gaps on
+for_window [class="^.*"] border pixel 2
 
 # Volume keys
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
@@ -32,7 +32,7 @@ font pango: System San Francisco Display 10
 floating_modifier Mod1
 
 # Start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec gnome-terminal
 
 # Kill focused window
 bindsym Mod1+Shift+q kill
@@ -107,16 +107,27 @@ bindsym Mod1+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym Mod1+minus scratchpad show
 
-set $workspace1 "1 "
-set $workspace2 "2 "
-set $workspace3 "3 "
-set $workspace4 "4 "
-set $workspace5 "5 "
-set $workspace6 "6 "
-set $workspace7 "7 "
-set $workspace8 "8 "
-set $workspace9 "9 "
-set $workspace10 "10 "
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+
+workspace $workspace1 output DP-0
+workspace $workspace2 output DP-0
+workspace $workspace3 output DP-0
+workspace $workspace4 output DP-0
+workspace $workspace5 output DP-0
+workspace $workspace6 output HDMI-0
+workspace $workspace7 output HDMI-0
+workspace $workspace8 output HDMI-0
+workspace $workspace9 output HDMI-0
+workspace $workspace10 output HDMI-0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -149,7 +160,7 @@ bindsym Mod1+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+e exec /home/nii236/.i3/scripts/exit_menu
+bindsym $mod+Shift+e exec /home/nii236/.config/i3/scripts/exit_menu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -169,10 +180,12 @@ mode "resize" {
 
 bindsym Mod1+r mode "resize"
 
+client.focused              #353439 #9FEE00 #7B9F35
+
 # Statusbar
 bar {
 	position top
-  	status_command i3blocks -c /home/nii236/.i3/i3blocks.conf
+  	status_command i3blocks -c /home/nii236/.config/i3/i3blocks.conf
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -183,6 +196,6 @@ bar {
 	}
 }
 
-exec_always --no-startup-id feh --bg-scale '/home/nii236/Pictures/watch.jpg'
-
-# exec_always --no-startup-id compton -f
+exec_always --no-startup-id feh --bg-fill --randomize /usr/share/wallpapers/*
+exec_always --no-startup-id compton -f
+exec_always --no-startup-id ~/.xinitrc
