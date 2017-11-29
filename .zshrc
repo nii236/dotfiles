@@ -14,6 +14,7 @@ export GOWORK=/home/nii236/go/src/github.com/blockninja
 export ZSH=/home/nii236/.oh-my-zsh
 export PATH="/opt:/usr/local/bin:/home/nii236/go/bin:/usr/local/go/bin:/home/nii236/bin:$PATH"
 export MONO=/home/nii236/go/src/github.com/blockninja/monocular
+export FRAG=/home/nii236/go/src/github.com/blockninja/fragmentcloud
 
 ZSH_THEME="steeef"
 
