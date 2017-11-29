@@ -1,5 +1,5 @@
 # Keybin
-set $mod Mod4
+set $mod Mod1
 # Lockscreen
 
 bindsym $mod+Shift+x exec i3lock --color 475263
