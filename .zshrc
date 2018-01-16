@@ -1,3 +1,5 @@
+alias h="helm"
+alias k="kubectl"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias gs="git status"
 alias gb="git branch"
@@ -7,14 +9,19 @@ alias be="bundle exec"
 alias ss="~/screenshot.sh"
 alias ta="tmux attach"
 
+
+export GOBIN=$HOME/go/bin
+export KK=$HOME/go/src/github.com/nii236/kk
+export KUBECONFIG=$HOME/.kube/admin.conf
 export VAULT_ADDR=https://vaultstore.theninja.life
 export EDITOR=vim
 export GOPATH=/home/nii236/go
 export GOWORK=/home/nii236/go/src/github.com/blockninja
 export ZSH=/home/nii236/.oh-my-zsh
-export PATH="/opt:/usr/local/bin:/home/nii236/go/bin:/usr/local/go/bin:/home/nii236/bin:$PATH"
+export PATH="/opt:/usr/local/bin:/home/nii236/go/bin:/usr/local/go/bin:/home/nii236/bin:/home/nii236/.local/bin:$PATH"
 export MONO=/home/nii236/go/src/github.com/blockninja/monocular
 export FRAG=/home/nii236/go/src/github.com/blockninja/fragmentcloud
+export R=/home/nii236/go/src/github.com/blockninja/raijin
 
 ZSH_THEME="steeef"
 
