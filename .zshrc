@@ -9,19 +9,27 @@ alias be="bundle exec"
 alias ss="~/screenshot.sh"
 alias ta="tmux attach"
 
+export BLOCKNINJA_DEV=true
+export BLOCKNINJA_SEED_EMAIL="jtnguyen236@gmail.com"
+export BLOCKNINJA_SEED_NAME="john Nguyen"
+export BLOCKNINJA_SEED_PASSWORD="admin"
+export BLOCKNINJA_DEV_IP="127.0.0.1"
 
+export NOMAD_ADDR="http://10.254.26.101:4646"
 export GOBIN=$HOME/go/bin
 export KK=$HOME/go/src/github.com/nii236/kk
 export KUBECONFIG=$HOME/.kube/admin.conf
 export VAULT_ADDR=https://vaultstore.theninja.life
 export EDITOR=vim
 export GOPATH=/home/nii236/go
-export GOWORK=/home/nii236/go/src/github.com/blockninja
+export A=/home/nii236/go/src/github.com/ninjadojo/ahei
+export GOWORK=/home/nii236/go/src/github.com/ninjadojo
+export BN=/home/nii236/go/src/github.com/ninjadojo/blockninja
 export ZSH=/home/nii236/.oh-my-zsh
 export PATH="/opt:/usr/local/bin:/home/nii236/go/bin:/usr/local/go/bin:/home/nii236/bin:/home/nii236/.local/bin:$PATH"
-export MONO=/home/nii236/go/src/github.com/blockninja/monocular
-export FRAG=/home/nii236/go/src/github.com/blockninja/fragmentcloud
-export R=/home/nii236/go/src/github.com/blockninja/raijin
+export MONO=/home/nii236/go/src/github.com/ninjadojo/monocular
+export FRAG=/home/nii236/go/src/github.com/ninjadojo/fragmentcloud
+export R=/home/nii236/go/src/github.com/ninjadojo/raijin
 
 ZSH_THEME="steeef"
 
