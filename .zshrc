@@ -1,6 +1,5 @@
 alias h="helm"
 alias k="kubectl"
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
