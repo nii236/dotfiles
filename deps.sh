@@ -7,7 +7,7 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 # BASE DEPENDENCIES
 sudo apt update
 sudo apt upgrade
-sudo apt install -y zsh git curl w3m emacs vim ranger htop google-chrome-stable i3 i3blocks i3status
+sudo apt install -y zsh git curl w3m emacs vim ranger htop google-chrome-stable i3 i3blocks i3status gnome-tweak-tools
 
 
 # VIMPLUG
@@ -65,3 +65,11 @@ sudo tar -C /usr/local/ -xzf go1.11.linux-amd64.tar.gz
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 nvm install --lts
+
+# FONTS
+mkdir ~/.fonts
+cd ~/Downloads
+wget https://github.com/be5invis/Iosevka/releases/download/v2.0.0/01-iosevka-2.0.0.zip
+unzip 01-iosevka-2.0.0.zip
+mv ~/Downloads/ttf/* ~/.fonts/
+sudo fc-cache
