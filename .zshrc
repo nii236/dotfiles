@@ -9,6 +9,7 @@ alias be="bundle exec"
 alias ss="~/screenshot.sh"
 alias ta="tmux attach"
 
+export XDG_CURRENT_DESKTOP=GNOME
 export BLOCKNINJA_DEV=true
 export BLOCKNINJA_SEED_EMAIL="jtnguyen236@gmail.com"
 export BLOCKNINJA_SEED_NAME="john Nguyen"
@@ -27,7 +28,7 @@ export GOWORK=/home/nii236/go/src/github.com/ninjadojo
 export BN=/home/nii236/go/src/github.com/ninjadojo/blockninja
 export ZSH=/home/nii236/.oh-my-zsh
 export PATH="/opt:/usr/local/bin:/home/nii236/go/bin:/usr/local/go/bin:/home/nii236/bin:/home/nii236/.local/bin:$PATH"
-export MONO=/home/nii236/go/src/github.com/ninjadojo/monocular
+export M=/home/nii236/go/src/github.com/ninjadojo/monocular
 export FRAG=/home/nii236/go/src/github.com/ninjadojo/fragmentcloud
 export R=/home/nii236/go/src/github.com/ninjadojo/raijin
 

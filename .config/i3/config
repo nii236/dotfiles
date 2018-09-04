@@ -6,8 +6,8 @@ set $sup Mod1
 bindsym $mod+Shift+x exec i3lock --color 475263
 # i3-gaps settings
 gaps inner 20
-gaps outer 50
-#smart_gaps on
+gaps outer 20
+smart_gaps on
 for_window [class="^.*"] border pixel 2
 
 # Volume keys
@@ -27,7 +27,7 @@ set $urgent-bg-color     #E53935
 
 # Font
 #font pango: System San Francisco Display 10
-font pango: SFNS Display 12
+font pango: Iosevka Light 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
