@@ -7,7 +7,7 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 # BASE DEPENDENCIES
 sudo apt update
 sudo apt upgrade
-sudo apt install -y zsh git curl w3m emacs vim ranger htop google-chrome-stable i3 i3blocks i3status gnome-tweak-tools
+sudo apt install -y zsh git curl w3m emacs vim ranger htop google-chrome-stable i3 i3blocks i3status gnome-tweak-tools lxappearance
 
 
 # VIMPLUG
