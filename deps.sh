@@ -61,6 +61,7 @@ sudo usermod -aG docker nii236
 cd ~/Downloads
 wget https://dl.google.com/go/go1.11.linux-amd64.tar.gz
 sudo tar -C /usr/local/ -xzf go1.11.linux-amd64.tar.gz
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
