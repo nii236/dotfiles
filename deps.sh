@@ -82,3 +82,4 @@ sudo snap install vscode --classic
 sudo snap install mattermost-desktop
 sudo snap install spotify
 sudo snap install mailspring
+sudo snap install telegram-desktop
