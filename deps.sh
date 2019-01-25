@@ -9,6 +9,9 @@ sudo apt update
 sudo apt upgrade
 sudo apt install -y zsh git curl w3m emacs vim ranger htop google-chrome-stable i3 i3blocks i3status gnome-tweak-tools lxappearance
 
+# TERMINAL
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 # VIMPLUG
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
