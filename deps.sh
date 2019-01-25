@@ -77,3 +77,8 @@ wget https://github.com/be5invis/Iosevka/releases/download/v2.0.0/01-iosevka-2.0
 unzip 01-iosevka-2.0.0.zip
 mv ~/Downloads/ttf/* ~/.fonts/
 sudo fc-cache
+
+sudo snap install vscode --classic
+sudo snap install mattermost-desktop
+sudo snap install spotify
+sudo snap install mailspring
